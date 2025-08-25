@@ -1,0 +1,725 @@
+{
+  "id": "034cdc98-880e-41b7-9772-fcd5589cb829",
+  "version": "2.0",
+  "name": "Ticket Booking",
+  "url": "https://aptech-tester.web.app",
+  "tests": [{
+    "id": "9d10d5b8-8dd6-4100-ace1-2aa33ab314b2",
+    "name": "TC_TicketBooking_Nguoilon=7_Business_Failed",
+    "commands": [{
+      "id": "e6b6fd29-c58d-4038-8ab9-8469465e7e69",
+      "comment": "",
+      "command": "open",
+      "target": "/ticket-booking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a55a4092-fc32-4da2-be8b-1485d4a35308",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_fullname",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Thanh Ngân"
+    }, {
+      "id": "09ce0336-7e0e-4702-b1d0-eb2d503fe379",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_address",
+      "targets": [
+        ["id=ticket-booking-form_address", "id"],
+        ["css=#ticket-booking-form_address", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_address']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Liên Chiểu"
+    }, {
+      "id": "767f5e5e-140a-4826-8771-465609706409",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_idnumber",
+      "targets": [
+        ["id=ticket-booking-form_idnumber", "id"],
+        ["css=#ticket-booking-form_idnumber", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_idnumber']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "5200012654"
+    }, {
+      "id": "56ba4738-7891-4fbb-ad8f-5c3f2981c7a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_year",
+      "targets": [
+        ["id=ticket-booking-form_year", "id"],
+        ["css=#ticket-booking-form_year", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_year']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2018"
+    }, {
+      "id": "b2f6b75c-383a-4579-bd8f-2f5855f82247",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item:nth-child(4) > .ant-row",
+      "targets": [
+        ["css=.ant-form-item:nth-child(4) > .ant-row", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4d59a1d-d311-47d6-b043-d55bbbf926b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-picker-cell-hover > .ant-picker-cell-inner",
+      "targets": [
+        ["css=.ant-picker-cell-hover > .ant-picker-cell-inner", "css:finder"],
+        ["xpath=//tr[4]/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c624d6be-9365-4dba-a271-863220f8cd43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-radio-wrapper:nth-child(2) .ant-radio-input",
+      "targets": [
+        ["css=.ant-radio-wrapper:nth-child(2) .ant-radio-input", "css:finder"],
+        ["xpath=(//input[@name=':rf:'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ticket-booking-form_classType']/label[2]/span/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be8d9fba-64b6-4985-86ca-bec5669eac73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[6]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tính tiền / Xuất vé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74f3da01-2056-4d34-83b8-ba2148896b87",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-descriptions-row:nth-child(5) .ant-descriptions-item-content",
+      "targets": [],
+      "value": "Người lớn"
+    }, {
+      "id": "7c15a922-5686-4a49-a193-9235a7b4e39f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-result-title",
+      "targets": [],
+      "value": "Tiền vé: 4.000.000 VNĐ"
+    }]
+  }, {
+    "id": "01465c61-88a7-4bc9-a6cf-a23566bf55cf",
+    "name": "TC_TicketBooking_Nguoilon=7_Economy_Failed",
+    "commands": [{
+      "id": "a911205b-2619-46f5-a8ed-e09d79f3a254",
+      "comment": "",
+      "command": "open",
+      "target": "/ticket-booking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0673982-03fd-4fc3-a230-eef755e5f457",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_fullname",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Thanh Ngân"
+    }, {
+      "id": "bb4f0f73-8dd0-41ce-8f9d-a7b0d38ddac4",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_address",
+      "targets": [
+        ["id=ticket-booking-form_address", "id"],
+        ["css=#ticket-booking-form_address", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_address']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Liên Chiểu"
+    }, {
+      "id": "3e33cca7-3eae-4bc8-8830-7c07d88015d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_idnumber",
+      "targets": [
+        ["id=ticket-booking-form_idnumber", "id"],
+        ["css=#ticket-booking-form_idnumber", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_idnumber']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "5200012654"
+    }, {
+      "id": "0fc1917f-4cfc-41a5-9516-d4b1b4815392",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_year",
+      "targets": [
+        ["id=ticket-booking-form_year", "id"],
+        ["css=#ticket-booking-form_year", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_year']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2018"
+    }, {
+      "id": "b48dfad3-6bd4-4a25-9db3-64859736c1b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item:nth-child(4) > .ant-row",
+      "targets": [
+        ["css=.ant-form-item:nth-child(4) > .ant-row", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb2fc2b6-75a9-49e5-94bd-ae6a18ace9da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-picker-cell-hover > .ant-picker-cell-inner",
+      "targets": [
+        ["css=.ant-picker-cell-hover > .ant-picker-cell-inner", "css:finder"],
+        ["xpath=//tr[4]/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61e66f23-271b-4b0a-8a4b-df806c327259",
+      "comment": "",
+      "command": "click",
+      "target": "name=:rf:",
+      "targets": [
+        ["name=:rf:", "name"],
+        ["css=.ant-radio-checked > .ant-radio-input", "css:finder"],
+        ["xpath=//input[@name=':rf:']", "xpath:attributes"],
+        ["xpath=//div[@id='ticket-booking-form_classType']/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4823b138-2fda-4efa-9f43-eff15bd08be2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[6]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tính tiền / Xuất vé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f3c01e7-0f45-4fa2-bc26-f9ad4e773b18",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-descriptions-row:nth-child(5) .ant-descriptions-item-content",
+      "targets": [],
+      "value": "Người lớn"
+    }, {
+      "id": "80c603b4-fc38-4399-8146-7811df388e7d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-result-title",
+      "targets": [],
+      "value": "Tiền vé: 3.000.000 VNĐ"
+    }]
+  }, {
+    "id": "e13ecdd9-9b8b-4603-8f06-55cb6ff6ec58",
+    "name": "TC_TicketBooking_Nguoilon>7_Economy",
+    "commands": [{
+      "id": "26465c8f-1639-4153-bfe6-8fdbb901fead",
+      "comment": "",
+      "command": "open",
+      "target": "/ticket-booking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62e00b02-c64b-44be-98e7-e2c33f1bbd55",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_fullname",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Thanh Ngân"
+    }, {
+      "id": "e26f56fd-f58b-49e4-bc46-53d5bef80ca1",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_address",
+      "targets": [
+        ["id=ticket-booking-form_address", "id"],
+        ["css=#ticket-booking-form_address", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_address']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Liên Chiểu"
+    }, {
+      "id": "cc1f79e7-d47d-42c1-a749-bf895a3220e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_idnumber",
+      "targets": [
+        ["id=ticket-booking-form_idnumber", "id"],
+        ["css=#ticket-booking-form_idnumber", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_idnumber']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "5200012654"
+    }, {
+      "id": "0faeecaa-f9de-49f0-8cff-08aa3a1a3bcd",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_year",
+      "targets": [
+        ["id=ticket-booking-form_year", "id"],
+        ["css=#ticket-booking-form_year", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_year']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2017"
+    }, {
+      "id": "a61cb0ab-e7fe-4db2-ba1a-cbc59e9b7940",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-picker-cell-hover > .ant-picker-cell-inner",
+      "targets": [
+        ["css=.ant-picker-cell-hover > .ant-picker-cell-inner", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4733e4e4-4588-4413-b996-09db1c867c9c",
+      "comment": "",
+      "command": "click",
+      "target": "name=:rf:",
+      "targets": [
+        ["name=:rf:", "name"],
+        ["css=.ant-radio-checked > .ant-radio-input", "css:finder"],
+        ["xpath=//input[@name=':rf:']", "xpath:attributes"],
+        ["xpath=//div[@id='ticket-booking-form_classType']/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a4de3fb-f5d5-4234-930b-3fc96ce4bb19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[6]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tính tiền / Xuất vé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d7a1958-2397-4818-b540-e99aaca11c6e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-descriptions-row:nth-child(5) .ant-descriptions-item-content",
+      "targets": [],
+      "value": "Người lớn"
+    }, {
+      "id": "5e4c7c5f-0c5f-479b-8531-1be9ed5126e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-result-title",
+      "targets": [],
+      "value": "Tiền vé: 3.000.000 VNĐ"
+    }]
+  }, {
+    "id": "4eab02e0-6fbf-4c64-9243-0f78097e1c33",
+    "name": "TC_TicketBooking_Nguoilon>7_Business",
+    "commands": [{
+      "id": "c35ca1c1-ca56-4d07-ad80-75171db8c8d0",
+      "comment": "",
+      "command": "open",
+      "target": "/ticket-booking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "340643b9-5278-4d83-b17f-3a96e6cd9681",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_fullname",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Thanh Ngân"
+    }, {
+      "id": "9104dbff-e41a-4e74-b669-94895fa5d531",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_address",
+      "targets": [
+        ["id=ticket-booking-form_address", "id"],
+        ["css=#ticket-booking-form_address", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_address']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Liên Chiểu"
+    }, {
+      "id": "8f9b13e5-1e5f-45df-8624-75ebc056dca2",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_idnumber",
+      "targets": [
+        ["id=ticket-booking-form_idnumber", "id"],
+        ["css=#ticket-booking-form_idnumber", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_idnumber']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "5200012654"
+    }, {
+      "id": "d29021cc-5423-4829-b90b-9d0d7a205ac4",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_year",
+      "targets": [
+        ["id=ticket-booking-form_year", "id"],
+        ["css=#ticket-booking-form_year", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_year']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2017"
+    }, {
+      "id": "57a63ff4-ac72-4143-ae18-ee87a2f12e60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item:nth-child(4) > .ant-row",
+      "targets": [
+        ["css=.ant-form-item:nth-child(4) > .ant-row", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9e9dd84-002b-4f2d-837c-e902f780658c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-picker-cell-hover > .ant-picker-cell-inner",
+      "targets": [
+        ["css=.ant-picker-cell-hover > .ant-picker-cell-inner", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d19279fb-9125-43bb-a4c1-815a0df32f1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-radio-wrapper:nth-child(2) .ant-radio-inner",
+      "targets": [
+        ["css=.ant-radio-wrapper:nth-child(2) .ant-radio-inner", "css:finder"],
+        ["xpath=//div[@id='ticket-booking-form_classType']/label[2]/span/span", "xpath:idRelative"],
+        ["xpath=//label[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d621bba-228d-4cc6-83d9-e1e4bed6cae2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[6]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tính tiền / Xuất vé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03c71334-75fb-48ac-aa38-8d46ca3adab3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-descriptions-row:nth-child(5) .ant-descriptions-item-content",
+      "targets": [],
+      "value": "Người lớn"
+    }, {
+      "id": "68afbb69-3869-4655-95d2-66fa817ee65c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-result-title",
+      "targets": [],
+      "value": "Tiền vé: 4.000.000 VNĐ"
+    }]
+  }, {
+    "id": "4785ed6c-c3de-410a-b2cf-48f8f64ddcae",
+    "name": "TC_TicketBooking_TreEm_Business_Failed",
+    "commands": [{
+      "id": "40705b71-c744-46bb-af5b-cd72e5b39bb8",
+      "comment": "",
+      "command": "open",
+      "target": "/ticket-booking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca20f207-42a9-4de1-b450-c4dbc8cf1959",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_fullname",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Thanh Ngân"
+    }, {
+      "id": "13350b24-6b65-4a18-afb9-4c07074c17b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_address",
+      "targets": [
+        ["id=ticket-booking-form_address", "id"],
+        ["css=#ticket-booking-form_address", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_address']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Liên Chiểu"
+    }, {
+      "id": "dbd33dd9-e746-4570-9288-3cc431dde2d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_idnumber",
+      "targets": [
+        ["id=ticket-booking-form_idnumber", "id"],
+        ["css=#ticket-booking-form_idnumber", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_idnumber']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "5200012654"
+    }, {
+      "id": "c2c881da-3f80-409c-81ee-f75708b8db8f",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_year",
+      "targets": [
+        ["id=ticket-booking-form_year", "id"],
+        ["css=#ticket-booking-form_year", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_year']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2019"
+    }, {
+      "id": "70134c1b-f7c0-4479-83ce-b4d734ff89a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-picker-cell-hover > .ant-picker-cell-inner",
+      "targets": [
+        ["css=.ant-picker-cell-hover > .ant-picker-cell-inner", "css:finder"],
+        ["xpath=//tr[4]/td[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33000611-f326-489f-97a2-5ed20895f707",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-radio-wrapper:nth-child(2) .ant-radio-input",
+      "targets": [
+        ["css=.ant-radio-wrapper:nth-child(2) .ant-radio-input", "css:finder"],
+        ["xpath=(//input[@name=':rf:'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ticket-booking-form_classType']/label[2]/span/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38e8471d-2e7d-4dab-8a13-3713a008a30c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[6]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tính tiền / Xuất vé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d56073fa-6dcc-4759-a73a-fc6c0e6d71d3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-descriptions-row:nth-child(5) .ant-descriptions-item-content",
+      "targets": [],
+      "value": "Trẻ em"
+    }, {
+      "id": "b4a8ab2a-6e97-4839-97ba-40fe5638a99c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-result-title",
+      "targets": [],
+      "value": "Tiền vé: 1.500.000 VNĐ"
+    }]
+  }, {
+    "id": "e81040d9-ce77-4e8c-8e97-1e453d65cc03",
+    "name": "TC_TicketBooking_TreEm_Economy",
+    "commands": [{
+      "id": "80cf6a60-a144-4427-a052-0c63ac4b0759",
+      "comment": "",
+      "command": "open",
+      "target": "/ticket-booking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98752284-dafc-4ac1-81d8-5b3684d50a7b",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_fullname",
+      "targets": [],
+      "value": "Thanh Ngân"
+    }, {
+      "id": "b143e41a-e861-41aa-97db-23c1dd4d3c6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_address",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Liên Chiểu"
+    }, {
+      "id": "f795f323-afc5-4ecb-b5e9-e5669075e117",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_idnumber",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5200012654"
+    }, {
+      "id": "70249e76-3d8e-40d2-9aed-824f1007255a",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket-booking-form_year",
+      "targets": [
+        ["id=ticket-booking-form_fullname", "id"],
+        ["css=#ticket-booking-form_fullname", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2019"
+    }, {
+      "id": "cdabdd7d-daae-4558-ab0c-a7caeaa04fc7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ticket-booking-form_year",
+      "targets": [
+        ["id=ticket-booking-form_year", "id"],
+        ["css=#ticket-booking-form_year", "css:finder"],
+        ["xpath=//input[@id='ticket-booking-form_year']", "xpath:attributes"],
+        ["xpath=//form[@id='ticket-booking-form']/div[4]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ba2fbe9-5be5-4aff-b324-95e4494a7ee6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-picker-cell-hover > .ant-picker-cell-inner",
+      "targets": [
+        ["css=.ant-picker-cell-hover > .ant-picker-cell-inner", "css:finder"],
+        ["xpath=//tr[4]/td[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac8c9506-74df-4ab1-a3a5-ba1679b8d8d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=:rf:",
+      "targets": [
+        ["name=:rf:", "name"],
+        ["css=.ant-radio-checked > .ant-radio-input", "css:finder"],
+        ["xpath=//input[@name=':rf:']", "xpath:attributes"],
+        ["xpath=//div[@id='ticket-booking-form_classType']/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c3c6841-6c36-47c1-b7d7-18b7c150e554",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='ticket-booking-form']/div[6]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tính tiền / Xuất vé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "573c49e8-4dff-4351-b7a4-3dd68d929ad2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-descriptions-row:nth-child(5) .ant-descriptions-item-content",
+      "targets": [],
+      "value": "Trẻ em"
+    }, {
+      "id": "19595202-d599-42fe-bee0-9e752c16b5a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-result-title",
+      "targets": [],
+      "value": "Tiền vé: 700.000 VNĐ"
+    }]
+  }],
+  "suites": [{
+    "id": "c0613d20-1588-4c74-a328-4d8399431a90",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9d10d5b8-8dd6-4100-ace1-2aa33ab314b2"]
+  }],
+  "urls": ["https://aptech-tester.web.app/"],
+  "plugins": []
+}

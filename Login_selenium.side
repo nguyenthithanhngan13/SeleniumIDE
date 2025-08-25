@@ -1,0 +1,541 @@
+{
+  "id": "c8db184a-03d6-44eb-bea1-cd1b7fc72758",
+  "version": "2.0",
+  "name": "Login_selenium",
+  "url": "https://aptech-tester.web.app",
+  "tests": [{
+    "id": "9fe0aa78-ec8c-4a0f-852a-deeb94588640",
+    "name": "TC1_Login Success",
+    "commands": [{
+      "id": "d7aa4378-66ce-4eb2-a8e6-c70204437954",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3240ec31-3e26-47fe-ba0f-9dcbd89c48b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_username",
+      "targets": [
+        ["id=login-form_username", "id"],
+        ["css=#login-form_username", "css:finder"],
+        ["xpath=//input[@id='login-form_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "9f8edc80-5a99-4af1-b3bb-cc2c17f6be4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_password",
+      "targets": [
+        ["id=login-form_password", "id"],
+        ["css=#login-form_password", "css:finder"],
+        ["xpath=//input[@id='login-form_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Tester@123"
+    }, {
+      "id": "7753d1c3-de47-43b4-af58-e8a805c0bc9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aab88c5-39fa-4123-8445-2c0f0b64e29f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.site-layout-content > div",
+      "targets": [
+        ["css=.site-layout-content > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "7d4b52b5-77bc-44ac-8077-236a66604490",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.site-layout-content > div",
+      "targets": [
+        ["css=.site-layout-content > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "Home Page"
+    }]
+  }, {
+    "id": "6118a439-a8aa-4bdb-b3a1-392954baee6e",
+    "name": "TC8_Password failed",
+    "commands": [{
+      "id": "9357e5a3-3fdc-4aae-a36a-c191dd1f0104",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58aedf8f-cae1-486f-bb93-9b0477afbfd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_username",
+      "targets": [
+        ["id=login-form_username", "id"],
+        ["css=#login-form_username", "css:finder"],
+        ["xpath=//input[@id='login-form_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "7a342017-1001-4cba-a254-564d73ddc4d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_password",
+      "targets": [
+        ["id=login-form_password", "id"],
+        ["css=#login-form_password", "css:finder"],
+        ["xpath=//input[@id='login-form_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Tester@1234"
+    }, {
+      "id": "91b03e17-4b9b-4d70-a11d-f2f364500998",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f20d94a-a858-4a00-a103-91b394c033e5",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h3:nth-child(1)",
+      "targets": [
+        ["css=h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Form')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c43fbbb2-aff7-4912-9312-3343d373b1e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3:nth-child(1)",
+      "targets": [
+        ["css=h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Form')]", "xpath:innerText"]
+      ],
+      "value": "Login Form"
+    }]
+  }, {
+    "id": "736c3de8-3cb2-4ee2-9c59-f02447a95b8d",
+    "name": "TC9_Username failed",
+    "commands": [{
+      "id": "a3b4d893-d3db-4322-9a1f-596f05903afc",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6caf21e-4fec-4a64-938a-769f708d009b",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_username",
+      "targets": [
+        ["id=login-form_username", "id"],
+        ["css=#login-form_username", "css:finder"],
+        ["xpath=//input[@id='login-form_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "adminn"
+    }, {
+      "id": "338a3ab7-2533-4efb-adf6-c7443f347f12",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_password",
+      "targets": [
+        ["id=login-form_password", "id"],
+        ["css=#login-form_password", "css:finder"],
+        ["xpath=//input[@id='login-form_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Tester@123"
+    }, {
+      "id": "cd103c45-5b7a-4623-a339-e0f22509dd83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72d231d0-2146-4955-ba7e-a87c9a39d087",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h3:nth-child(1)",
+      "targets": [
+        ["css=h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Form')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a0cb30eb-242c-44c1-a59c-243d15a7e364",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3:nth-child(1)",
+      "targets": [
+        ["css=h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Form')]", "xpath:innerText"]
+      ],
+      "value": "Login Form"
+    }]
+  }, {
+    "id": "828faad5-8bb0-49f2-b3c0-bee4b0d52c2c",
+    "name": "TC10_Login Failed",
+    "commands": [{
+      "id": "17b27001-c2d7-4caa-a827-95f199a2c18b",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "422342a2-f61d-4d80-bea2-ba7981e4c720",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_username",
+      "targets": [
+        ["id=login-form_username", "id"],
+        ["css=#login-form_username", "css:finder"],
+        ["xpath=//input[@id='login-form_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "adminn"
+    }, {
+      "id": "89e4b2eb-900f-4d1b-b417-a48325dc9003",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_password",
+      "targets": [
+        ["id=login-form_password", "id"],
+        ["css=#login-form_password", "css:finder"],
+        ["xpath=//input[@id='login-form_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Tester@1234"
+    }, {
+      "id": "6eb664a8-ef78-48d6-acb3-04748a5ef0c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a977f442-7373-4490-9a8d-642b8aa8942d",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h3:nth-child(1)",
+      "targets": [
+        ["css=h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Form')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "4c99863a-23a4-467c-accb-3df5c416a715",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3:nth-child(1)",
+      "targets": [
+        ["css=h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Form')]", "xpath:innerText"]
+      ],
+      "value": "Login Form"
+    }]
+  }, {
+    "id": "83afc034-3c73-422d-9a03-8131cb5827c2",
+    "name": "TC2_Login Username is required",
+    "commands": [{
+      "id": "dead3e27-d72d-480d-8ddb-5afb32fe2d3f",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f813b425-4614-476c-98d8-9a64224351f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_password",
+      "targets": [
+        ["id=login-form_password", "id"],
+        ["css=#login-form_password", "css:finder"],
+        ["xpath=//input[@id='login-form_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Tester@123"
+    }, {
+      "id": "cddb347d-2408-4794-a865-931d03c94259",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15d6e12a-2dae-41fb-870d-7a20554d0fdd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#login-form_username_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#login-form_username_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='login-form_username_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Tên đăng nhập không được để trống"
+    }]
+  }, {
+    "id": "c336e0d6-a56b-4b90-8428-24cb19fbfff9",
+    "name": "TC5_Login Password is required",
+    "commands": [{
+      "id": "df2b1a2d-756a-4870-bff4-99df8c3a7b08",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abf754b7-d175-4b22-800e-99264de15291",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_username",
+      "targets": [
+        ["id=login-form_username", "id"],
+        ["css=#login-form_username", "css:finder"],
+        ["xpath=//input[@id='login-form_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "d4a2a28f-bbd7-4c24-b158-de6f0547911f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn > span",
+      "targets": [
+        ["css=.ant-btn > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb1c92cf-7eab-4fb0-bc8a-9cbb04bf8cfa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#login-form_password_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#login-form_password_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='login-form_password_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Mật khẩu không được để trống"
+    }]
+  }, {
+    "id": "36e2f663-08b3-4a40-b3d4-24de395fab9f",
+    "name": "TC3_Login Username greater than or equal to 3",
+    "commands": [{
+      "id": "06a9f3e1-d5e2-4410-b2de-e02a8fb9fb0a",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b92ed85b-1572-4a43-b093-558cd6e97ebb",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_username",
+      "targets": [
+        ["id=login-form_username", "id"],
+        ["css=#login-form_username", "css:finder"],
+        ["xpath=//input[@id='login-form_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ad"
+    }, {
+      "id": "ea6b3b81-436d-472d-a06c-e03658deef99",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#login-form_username_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#login-form_username_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='login-form_username_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Độ dài tên đăng nhập phải nằm trong khoảng 3 đến 30 ký tự"
+    }]
+  }, {
+    "id": "0adfcada-21ba-4e93-9f35-85f145467a21",
+    "name": "TC4_Login Username less than or equal to 30",
+    "commands": [{
+      "id": "5c436735-4ab6-4ae2-9691-de399eb9dc09",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd9f0c7c-5c6b-4577-b5fb-45d0c6ccf60a",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_username",
+      "targets": [
+        ["id=login-form_username", "id"],
+        ["css=#login-form_username", "css:finder"],
+        ["xpath=//input[@id='login-form_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "adminadminadminadminadminadminn"
+    }, {
+      "id": "180ceae9-5048-4bfb-a998-9f0cda9fe886",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-form-item-explain-error",
+      "targets": [
+        ["css=.ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='login-form_username_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Độ dài tên đăng nhập phải nằm trong khoảng 3 đến 30 ký tự"
+    }]
+  }, {
+    "id": "7c029415-7ad2-4fad-885f-ff64648d083d",
+    "name": "TC6_Login Password greater than or equal to 6",
+    "commands": [{
+      "id": "24e3435e-e703-4ba2-a14f-fe810e1af468",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aeefba01-1e7f-4c9a-ae3e-71430896e1c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_password",
+      "targets": [
+        ["id=login-form_password", "id"],
+        ["css=#login-form_password", "css:finder"],
+        ["xpath=//input[@id='login-form_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "aaaaa"
+    }, {
+      "id": "cf2e2789-5292-4ef7-acae-f9d0f70fd9ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#login-form_password_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#login-form_password_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='login-form_password_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Độ dài mật khẩu phải nằm trong khoảng 6 đến 10 ký tự"
+    }]
+  }, {
+    "id": "d0040719-0f9f-4627-9ba9-e356b01d8e80",
+    "name": "TC7_Login Password less than or equal to 10",
+    "commands": [{
+      "id": "34e883ae-695a-4c6f-9d5a-405118ce335f",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28403e8d-bd7e-40f3-9544-22553b80db09",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form_password",
+      "targets": [
+        ["id=login-form_password", "id"],
+        ["css=#login-form_password", "css:finder"],
+        ["xpath=//input[@id='login-form_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "aaaaaaaaaaa"
+    }, {
+      "id": "b315ceba-3e42-47ad-aa22-dbbfdeaea9cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#login-form_password_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#login-form_password_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='login-form_password_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Độ dài mật khẩu phải nằm trong khoảng 6 đến 10 ký tự"
+    }]
+  }],
+  "suites": [{
+    "id": "6e4707d1-7948-473a-b19d-c02116eb3d46",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9fe0aa78-ec8c-4a0f-852a-deeb94588640"]
+  }],
+  "urls": ["https://aptech-tester.web.app/"],
+  "plugins": []
+}
